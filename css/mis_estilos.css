@@ -1,0 +1,60 @@
+:root {
+--white: hsl(0, 0%, 100%);
+--lightGray: hsl(212, 45%, 89%);
+--grayishBlue: hsl(220, 15%, 55%);
+--darkBlue: hsl(218, 44%, 22%);
+}
+
+* {
+    /*configurar la página para tamaño completo (parte 1)*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*centrado horizontal y vertical*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*configurar la página para tamaño completo (parte 2)*/
+    min-height: 100vh;
+
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+
+    background-color: var(--lightGray);
+}
+
+main {
+    width: 320px;
+    border-radius: 5%;
+    overflow: hidden;
+    background-color: var(--white);
+    padding: 16px;
+}
+
+div {
+    border-radius: inherit;
+}
+img {
+    width: 100%;
+    border-radius: inherit;
+}
+
+h1 {
+    margin-top: 20px;
+    color: var(--darkBlue);
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: var(--grayishBlue);
+    text-align: center;
+    font-size: 1.1em;
+}
